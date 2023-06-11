@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <p class="profile__name">PROFILE NAME <span>common user</span></p>
+        <p class="motto">"Сделаем ваш учёт лучше! Одна заявка - одно решение!"</p>
+        <div class="burger">
+            <span></span>
+            <div class="burger-menu">
+                <p class="burger-menu-botder-bottom">Новая заявка</p>
+                <p class="burger-menu-botder-bottom">Главная</p>
+                <p>FAQ</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_block1">
+            <div class="pfp"><img src="" alt=""></div>
+            <div class="main_text-block1">
+                <div class="main_profile_name">
+                    <p>Profile name</p>
+                </div>
+                <div class="stat">
+                    <p>Заявок подано: <span></span></p>
+                    <p class="accepted_requests">Заявок принято: <span></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="main_block2">
+            <p class="filter">
+                <select id="category" name="categories">
+                    <option value="categories">Категория</option>
+                    <option value="categories">Бухгалтерский учет</option>
+                    <option value="categories">Налоговое консультирование</option>
+                    <option value="categories">Ведение учета</option>
+                </select>
+            </p>
+            <input type="text" name="search" class="search"
+            placeholder="Поиск">
+        </div>
+        <h1 class="main-h1-1">ЗАЯВКИ</h1>
+        <div class="requests_choice">
+            <p class="sent">ОТПРАВЛЕНЫ</p>
+            <p class="accepted">ПРИНЯТЫ</p>
+        </div>
+        <div class="requests">
+            <div class="c1">
+                <div class="q1"></div>
+                <div class="q2"></div>
+                <div class="q3"></div>
+            </div>
+            <div class="c2">
+                <div class="q4"></div>
+                <div class="q5"></div>
+                <div class="q6"></div>
+            </div>
+            <div class="c3">
+                <div class="q7"></div>
+                <div class="q8"></div>
+                <div class="q9"></div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #D9D9D9;
+    height: 200px;
+    border-radius: 30px;
+    margin: 50px;
+}
+
+.profile__name {
+    align-items: center;
+    margin-left: 100px;
+    font-size: 40px;
+}
+
+.motto {
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 75px;
+}
+
+.profile__name span {
+    font-size: 15px;
+    color: #979797;
+}
+
+.burger {
+    position: absolute;
+    right: 110px;
+    top: 125px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.burger span,
+.burger span:before,
+.burger span:after {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    height: 10px;
+    background: black;
+    display: block;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.burger span:before {
+    content: "";
+    top: -20px;
+    transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.burger span {
+    top: 20px;
+}
+
+.burger span:after {
+    content: "";
+    bottom: -20px;
+    transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.burger span.active:before {
+    content: "";
+    top: 0px;
+    transform: rotate(45deg);
+    transition: top 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.burger span.active:after {
+    content: "";
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.burger span.active {
+    background: rgba(255, 255, 255, 0);
+}
+
+.burger-menu {
+    position: absolute;
+    width: 150px;
+    background-color: #979797;
+    border: rgba(0, 0, 0, 0.3) solid 1px;
+    visibility: hidden;
+    top: 50px;
+    border-radius: 30px;
+}
+
+.burger-menu p {
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.7);
+    padding-left: 10px;
+}
+
+.pfp {
+    height: 373px;
+    width: 373px;
+    background-color: #D9D9D9;
+    margin: 110px 0px 0px 200px;
+    border-radius: 50%;
+}
+
+.pfp img {
+    height: 373px;
+    width: 373px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.main_block1 {
+    display: flex;
+    align-items: center;
+}
+
+.main_text-block1 {
+    margin-left: 50px;
+}
+
+.main_profile_name {
+    font-size: 96px;
+}
+
+.stat {
+    margin-top: 83px;
+    font-size: 36px;
+    display: flex;
+}
+
+.accepted_requests {
+    margin-left: 50px;
+}
+
+.main_block2 {
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+#category {
+    border-radius: 0px;
+    font-size: 24px;
+    padding: 18px 120px 18px 10px;
+}
+
+select {
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select:not([multiple]) {
+    padding-right: 1.2em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0.15em);
+    background-size: 0.5em auto;
+    background-image: url("/img/Vector (1).svg");
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.search {
+    margin-left: 50px;
+    height: 65px;
+    width: 510px;
+    border-radius: 0px;
+    border: 1px black solid;
+}
+
+input.search {
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.search::placeholder {
+    font-size: 24px;
+}
+
+main h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-size: 48px;
+}
+
+.requests_choice {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-top: 1px #D9D9D9 solid;
+    line-height: 70px;
+}
+
+.requests_choice p {
+    font-size: 24px;
+    margin-top: -1px;
+}
+
+.accepted {
+    margin-left: 106px;
+}
+
+.sent {
+    border-top: 1px black solid;
+}
+
+.requests {
+    display: flex;
+    margin-top: 150px;
+    height: 1520px;
+    width: 1520px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.c1 div {
+    margin-right: 160px;
+    display: flex;
+    background-color: #D9D9D9;
+    height: 400px;
+    width: 400px;
+    margin-bottom: 160px;
+}
+
+.c2 div {
+    margin-right: 160px;
+    display: flex;
+    background-color: #D9D9D9;
+    height: 400px;
+    width: 400px;
+    margin-bottom: 160px;
+}
+
+.c3 div {
+    margin-right: 160px;
+    display: flex;
+    background-color: #D9D9D9;
+    height: 400px;
+    width: 400px;
+    margin-bottom: 160px;
+}
